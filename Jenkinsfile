@@ -6,7 +6,7 @@ node {
       }
       stage('Build image') {
 
-            app = docker.build("devops/test")
+            app = docker.build("amit718/devops")
       }
       stage('Test image') {
             app.inside {
